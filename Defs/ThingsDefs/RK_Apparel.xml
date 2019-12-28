@@ -1627,8 +1627,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker Inherit="false">
-		</recipeMaker>
 		<costList>
 			<Steel>10</Steel>
 		</costList>
@@ -1664,9 +1662,6 @@
 				<li>RK_Thief</li>
 			</tags>
 		</apparel>
-		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
-		</tradeTags>
 	</ThingDef>
 
 	<!-- 특수 부대 복장-->
@@ -1679,8 +1674,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker Inherit="false">
-		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
 			<Steel>60</Steel>
@@ -1735,9 +1728,6 @@
 				<li>RK_EliteSoldier</li>
 			</tags>
 		</apparel>
-		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
-		</tradeTags>
 	</ThingDef>
 
 	<!-- 가스마스크-->
@@ -1750,8 +1740,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker Inherit="false">
-		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
 			<ComponentIndustrial>4</ComponentIndustrial>
@@ -1795,9 +1783,6 @@
 				<li>RK_EliteSoldier</li>
 			</tags>
 		</apparel>
-		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
-		</tradeTags>
 	</ThingDef>
 
 	<!-- 특공 머리띠 -->
@@ -1810,8 +1795,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker Inherit="false">
-		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
 		</costList>
@@ -1842,9 +1825,6 @@
 				<li>RK_Demoman</li>
 			</tags>
 		</apparel>
-		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
-		</tradeTags>
 	</ThingDef>
 
 
@@ -2134,8 +2114,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker Inherit="False">
-		</recipeMaker>
 		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -2175,9 +2153,6 @@
 				<li>RK_Santa</li>	
 			</tags>
 		</apparel>
-		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
-		</tradeTags>
 	</ThingDef>
 	<!-- 산타 모자 추위저항 +5 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
@@ -2216,11 +2191,6 @@
 				<li>Overhead</li>
 			</layers>
 		</apparel>
-		<recipeMaker Inherit="False">
-		</recipeMaker>
-		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
-		</tradeTags>
 	</ThingDef>
 	<!-- 산타 보따리 +50 내구도 +20 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
@@ -2232,8 +2202,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker Inherit="false">
-		</recipeMaker>
 		<costList>
 			<Steel>10</Steel>
 		</costList>
@@ -2268,9 +2236,6 @@
 				<li>RK_Santa</li>
 			</tags>
 		</apparel>
-		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
-		</tradeTags>
 	</ThingDef>
 	
 	<StuffCategoryDef>

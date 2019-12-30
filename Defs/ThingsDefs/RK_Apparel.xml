@@ -1675,7 +1675,6 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<researchPrerequisite>HigherClassClothing</researchPrerequisite>	
 		</recipeMaker>
 		<costList>
@@ -1745,7 +1744,6 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<researchPrerequisite>HigherClassClothing</researchPrerequisite>	
 		</recipeMaker>
 		<costList>
@@ -1804,7 +1802,6 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<researchPrerequisite>HigherClassClothing</researchPrerequisite>	
 		</recipeMaker>
 		<costList>

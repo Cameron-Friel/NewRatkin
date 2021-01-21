@@ -367,7 +367,7 @@
 					<li>RK_Gunlance_NormalType</li>
 					<li>RK_Gunlance_SpreadType</li>
 				</weaponList>
-<<<<<<< HEAD:Defs/ThingDefs_Races/Races_Rakinlike.xml
+
 				<researchList>
 					<li>
 						<projects>
@@ -415,8 +415,7 @@
 						</projects>
 					</li>
 				</researchList>
-=======
->>>>>>> upstream/master:1.1/Defs/ThingDefs_Races/Races_Rakinlike.xml
+
 			</raceRestriction>
 			<thoughtSettings>
 				<cannotReceiveThoughts>

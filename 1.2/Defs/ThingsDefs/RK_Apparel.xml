@@ -1503,6 +1503,8 @@
 		<equippedStatOffsets>
 			<SocialImpact>0.10</SocialImpact>
 			<MedicalTendSpeed>0.10</MedicalTendSpeed>
+			<PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
+      		<PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -1558,8 +1560,11 @@
 			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>0.5</EquipDelay>
 		</statBases>
+
 		<equippedStatOffsets>
 			<MedicalTendQuality>0.10</MedicalTendQuality>
+			<PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
+      		<PsychicEntropyRecoveryRate>0.066</PsychicEntropyRecoveryRate>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -1696,7 +1701,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker Inherit="false">
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<researchPrerequisite>HigherClassClothing</researchPrerequisite>	
 		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
@@ -1716,9 +1723,9 @@
 			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
-			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
 			<Flammability>0.2</Flammability>
 			<EquipDelay>2.5</EquipDelay>
 		</statBases>
@@ -1767,7 +1774,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker Inherit="false">
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<researchPrerequisite>HigherClassClothing</researchPrerequisite>	
 		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
@@ -1786,9 +1795,9 @@
 			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>			
-			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.90</ArmorRating_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>

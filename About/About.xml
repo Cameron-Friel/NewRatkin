@@ -4,7 +4,10 @@
 	<author>Gloomylynx Nukafrog</author>
 	<supportedVersions>
 		<li>1.0</li>
+		<li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
+	<packageId>Solaris.RatkinRaceMod</packageId>
 	<description>
 New Ratkin Race Mod.
 What is different from the old version?
@@ -32,4 +35,22 @@ Storyteller Rotty Milden
 
 
 	</description>
+	<modDependencies>
+		<li>
+			<packageId>erdelf.HumanoidAlienRaces</packageId>
+			<displayName>Humanoid Alien Races 2.0</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+		</li>		
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>	
+		<li>erdelf.HumanoidAlienRaces</li>
+	</loadAfter>
 </ModMetaData>

@@ -1252,6 +1252,65 @@
 		</recipeMaker>
 	</ThingDef>
 
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
+		<defName>RK_PrestigeBulletProofHelmet</defName>
+		<label>Ratkin prestige military helmet</label>
+		<description>랫킨용 방탄 모자입니다. 착용자의 공포감을 조금 덜어주고 조준을 수월하게 해줍니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_PrestigeBulletProofHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<DevilstrandCloth>25</DevilstrandCloth>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Gold>90</Gold>
+		</costList>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>1</Mass>			
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>			
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<SocialImpact>0.10</SocialImpact>
+			<PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
+      		<PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+				<li>Teeth</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/RK_BulletProofHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>RK_Soldier</li>
+				<li>RK_3Tier</li>
+				<li>RoyalCombatGear</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
 	<!-- 플랫칼라코트 사회적영향력 +10% 협상 +10%  -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_FlatColorCoat</defName>
@@ -1707,20 +1766,20 @@
 		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
-			<Steel>60</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<Plasteel>40</Plasteel>
+			<Uranium>50</Uranium>
+			<ComponentSpacer>6</ComponentSpacer>
+			<Plasteel>150</Plasteel>
 		</costList>
 		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>		
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<statBases>
 			<MaxHitPoints>280</MaxHitPoints>
-			<WorkToMake>35000</WorkToMake>
+			<WorkToMake>75000</WorkToMake>
 			<Mass>5</Mass>
-			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
 			<ArmorRating_Sharp>1.08</ArmorRating_Sharp>
@@ -1761,6 +1820,7 @@
 		</apparel>
 		<tradeability>Sellable</tradeability>
 		<tradeTags Inherit="false">
+			<li>FabricationBench</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -1784,7 +1844,7 @@
 			<Plasteel>20</Plasteel>
 		</costList>
 		<costStuffCount>45</costStuffCount>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -1792,7 +1852,7 @@
 			<MaxHitPoints>240</MaxHitPoints>
 			<WorkToMake>18000</WorkToMake>
 			<Mass>2</Mass>			
-			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>			
 			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
@@ -1825,6 +1885,7 @@
 		</apparel>
 		<tradeability>Sellable</tradeability>
 		<tradeTags Inherit="false">
+			<li>FabricationBench</li>
 		</tradeTags>
 	</ThingDef>
 
@@ -1873,6 +1934,81 @@
 		</apparel>
 		<tradeability>Sellable</tradeability>
 		<tradeTags Inherit="false">
+			<li>FabricationBench</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
+		<defName>RK_PrestigeBattleSuit</defName>
+		<label>ratkin prestige battlesuit</label>
+		<description>침투에 유리하도록 디자인된 전투복입니다. 극한의 온도상황에서 활동할 수 있도록 설계되어있습니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_PrestigeBattleSuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<researchPrerequisite>HigherClassClothing</researchPrerequisite>	
+		</recipeMaker>
+		<costList>
+			<DevilstrandCloth>35</DevilstrandCloth>
+			<Uranium>50</Uranium>
+			<ComponentSpacer>6</ComponentSpacer>
+			<Plasteel>190</Plasteel>
+			<Gold>180</Gold>
+		</costList>
+		<costStuffCount>85</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>		
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>340</MaxHitPoints>
+			<WorkToMake>150000</WorkToMake>
+			<Mass>5</Mass>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+			<ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+			<Flammability>0.2</Flammability>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+			<PainShockThreshold>0.1</PainShockThreshold>
+			<Flammability>-0.25</Flammability>
+			<MoveSpeed>-0.15</MoveSpeed>
+			<PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
+      		<PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_PrestigeBattleSuit</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+				<li>Shell</li>
+				<li>OuterClothing</li>
+			</layers>
+			<tags>
+				<li>RoyalCombatGear</li>
+			</tags>
+		</apparel>
+		<tradeability>Sellable</tradeability>
+		<tradeTags Inherit="false">
+			<li>FabricationBench</li>
 		</tradeTags>
 	</ThingDef>
 

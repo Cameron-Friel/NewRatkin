@@ -1302,8 +1302,8 @@
 			</defaultOutfitTags>
 			<tags>
 				<li>RK_Soldier</li>
-				<li>RK_3Tier</li>
 				<li>RoyalCombatGear</li>
+				<li>PrestigeCombatGear</li>
 			</tags>
 		</apparel>
 		<recipeMaker>
@@ -2004,6 +2004,7 @@
 			</layers>
 			<tags>
 				<li>RoyalCombatGear</li>
+				<li>PrestigeCombatGear</li>
 			</tags>
 		</apparel>
 		<tradeability>Sellable</tradeability>

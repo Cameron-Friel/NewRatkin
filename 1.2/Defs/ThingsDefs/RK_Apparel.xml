@@ -1200,7 +1200,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_BulletProofHelmet</defName>
 		<label>Ratkin military helmet</label>
-		<description>랫킨용 방탄 모자입니다. 착용자의 공포감을 조금 덜어주고 조준을 수월하게 해줍니다.</description>
+		<description>A Ratkin military helment.</description>
 		<graphicData>
 			<texPath>Apparel/RK_BulletProofHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1255,7 +1255,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_PrestigeBulletProofHelmet</defName>
 		<label>Ratkin prestige military helmet</label>
-		<description>랫킨용 방탄 모자입니다. 착용자의 공포감을 조금 덜어주고 조준을 수월하게 해줍니다.</description>
+		<description>A Ratkin military helment build for nobles.</description>
 		<graphicData>
 			<texPath>Apparel/RK_PrestigeBulletProofHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1754,7 +1754,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_BattleSuit</defName>
 		<label>ratkin battlesuit</label>
-		<description>침투에 유리하도록 디자인된 전투복입니다. 극한의 온도상황에서 활동할 수 있도록 설계되어있습니다.</description>
+		<description>A Ratkin heavy combat suit.</description>
 		<graphicData>
 			<texPath>Apparel/RK_BattleSuit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1941,7 +1941,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_PrestigeBattleSuit</defName>
 		<label>ratkin prestige battlesuit</label>
-		<description>침투에 유리하도록 디자인된 전투복입니다. 극한의 온도상황에서 활동할 수 있도록 설계되어있습니다.</description>
+		<description>A Ratkin heavy combat suit built for nobles. Provides a slight social boost.</description>
 		<graphicData>
 			<texPath>Apparel/RK_PrestigeBattleSuit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

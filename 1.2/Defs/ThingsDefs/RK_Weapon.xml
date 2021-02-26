@@ -935,6 +935,164 @@
 		</graphicData>
 	</ThingDef>
 
+	<ThingDef ParentName="RK_IndustrialRangeWeapon">
+		<defName>RK_IonSniperRifle</defName>
+		<label>ion sniper rifle</label>
+		<description>A Ratkin tech ion sniper rifle.</description>
+		<graphicData>
+			<texPath>Weapon/RK_IonSniperRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>6</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RK_IonSniperRifle</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<range>45</range>
+				<soundCast>RK_IonSniper</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags Inherit="false">
+			<li>RK_Rifle</li>
+			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+		</weaponTags>
+		<equippedAngleOffset>45</equippedAngleOffset>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RK_IonSniperRifle</defName>
+		<label>ion sniper shot</label>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<stoppingPower>1.75</stoppingPower>
+			<armorPenetrationBase>0.50</armorPenetrationBase>
+			<speed>120</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Projectile/RK_IonSniperShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+      		<drawSize>1.5</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RK_IndustrialRangeWeapon">
+		<defName>RK_IonRifle</defName>
+		<label>ion rifle</label>
+		<description>A Ratkin tech ion rifle.</description>
+		<graphicData>
+			<texPath>Weapon/RK_IonRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>55000</WorkToMake>
+			<Mass>4</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RK_IonRifle</defaultProjectile>
+				<warmupTime>0.8</warmupTime>
+				<range>37</range>
+				<soundCast>RK_IonRifle</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<weaponTags Inherit="false">
+			<li>RK_Rifle</li>
+			<li>RK_Weapon</li>
+			<li>RK_RangeWeapon</li>
+		</weaponTags>
+		<equippedAngleOffset>45</equippedAngleOffset>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RK_IonRifle</defName>
+		<label>ion rifle shot</label>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<stoppingPower>1.2</stoppingPower>
+			<armorPenetrationBase>0.27</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Projectile/RK_IonRifleShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+      		<drawSize>1.5</drawSize>
+		</graphicData>
+	</ThingDef>
+
 	<!-- 3티어 -->
 	<!-- 랫킨용 실험용총 2연발 -->
 	<ThingDef ParentName="RK_IndustrialRangeWeapon">

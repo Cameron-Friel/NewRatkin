@@ -938,7 +938,7 @@
 	<ThingDef ParentName="RK_IndustrialRangeWeapon">
 		<defName>RK_IonSniperRifle</defName>
 		<label>ion sniper rifle</label>
-		<description>A Ratkin tech ion sniper rifle.</description>
+		<description>A pulsetech heavy sniper commissioned by the ratkin military as a means of penetrating the heavy armor worn by Imperial Cataphracts. It is unwieldy but has incredible range and deals excessive amounts of damage.</description>
 		<graphicData>
 			<texPath>Weapon/RK_IonSniperRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1017,7 +1017,7 @@
 	<ThingDef ParentName="RK_IndustrialRangeWeapon">
 		<defName>RK_IonRifle</defName>
 		<label>ion rifle</label>
-		<description>A Ratkin tech ion rifle.</description>
+		<description>A lightweight pulse-tech DMR commissioned by the ratkin military to compliment the superior agility of ratkin shock troops. It excels in chaotic mid-range skirmishes.</description>
 		<graphicData>
 			<texPath>Weapon/RK_IonRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -1255,7 +1255,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_PrestigeBulletProofHelmet</defName>
 		<label>Ratkin prestige military helmet</label>
-		<description>A Ratkin military helment build for nobles.</description>
+		<description>A variant of the ratkin bulletproof helmet with a gold accent that inspires confidence in those that behold the wearer. Satisfies royal clothing requirements.</description>
 		<graphicData>
 			<texPath>Apparel/RK_PrestigeBulletProofHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1754,7 +1754,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_BattleSuit</defName>
 		<label>ratkin battlesuit</label>
-		<description>A Ratkin heavy combat suit.</description>
+		<description>A battlesuit worn by advanced ratkin shock troops. Additional advanced components used in its construction offer the user superior mobility compared to other armor in it's weight class.</description>
 		<graphicData>
 			<texPath>Apparel/RK_BattleSuit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1941,7 +1941,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_PrestigeBattleSuit</defName>
 		<label>ratkin prestige battlesuit</label>
-		<description>A Ratkin heavy combat suit built for nobles. Provides a slight social boost.</description>
+		<description>A variant of the ratkin battlesuit with a gold accent that inspires confidence in those that behold the wearer. Satisfies royal clothing requirements.</description>
 		<graphicData>
 			<texPath>Apparel/RK_PrestigeBattleSuit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

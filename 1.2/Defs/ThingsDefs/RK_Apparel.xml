@@ -1841,8 +1841,8 @@
 		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
-			<ComponentIndustrial>4</ComponentIndustrial>
-			<Plasteel>20</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>50</Plasteel>
 		</costList>
 		<costStuffCount>45</costStuffCount>
 		<techLevel>Spacer</techLevel>

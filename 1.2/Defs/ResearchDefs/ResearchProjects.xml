@@ -141,15 +141,16 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>HigherClassClothing</defName>
-		<label>higher class clothing</label>
-		<description>고대 라킨 전투복 기술.</description>
+		<defName>RatkinBattlesuits</defName>
+		<label>ratkin battlesuits</label>
+		<description>Fabricate advanced heavy combat armor.</description>
 		<tab>RatkinTech</tab>
 		<baseCost>4000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>RatkinClothing</li>
 			<li>HighClassClothing</li>
+			<li>PoweredArmor</li>
 			<li>Fabrication</li>
 		</prerequisites>
 		<researchViewX>2</researchViewX>

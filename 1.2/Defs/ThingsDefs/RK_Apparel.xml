@@ -1765,7 +1765,7 @@
 				<li>FabricationBench</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-			<researchPrerequisite>HigherClassClothing</researchPrerequisite>	
+			<researchPrerequisite>RatkinBattlesuits</researchPrerequisite>	
 		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
@@ -1840,7 +1840,7 @@
 				<li>FabricationBench</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-			<researchPrerequisite>HigherClassClothing</researchPrerequisite>	
+			<researchPrerequisite>RatkinBattlesuits</researchPrerequisite>	
 		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
@@ -1956,7 +1956,7 @@
 				<li>FabricationBench</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-			<researchPrerequisite>HigherClassClothing</researchPrerequisite>	
+			<researchPrerequisite>RatkinBattlesuits</researchPrerequisite>	
 		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>

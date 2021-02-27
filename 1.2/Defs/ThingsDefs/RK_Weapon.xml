@@ -1030,7 +1030,7 @@
 			<AccuracyShort>0.80</AccuracyShort>
 			<AccuracyMedium>0.90</AccuracyMedium>
 			<AccuracyLong>0.80</AccuracyLong>
-			<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
 			<Steel>40</Steel>
@@ -1051,7 +1051,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_RK_IonRifle</defaultProjectile>
-				<warmupTime>0.8</warmupTime>
+				<warmupTime>1.4</warmupTime>
 				<range>37</range>
 				<soundCast>RK_IonRifle</soundCast>
 				<muzzleFlashScale>9</muzzleFlashScale>

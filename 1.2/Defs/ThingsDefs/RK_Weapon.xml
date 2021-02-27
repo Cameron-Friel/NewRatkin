@@ -959,7 +959,7 @@
 			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<researchPrerequisite>PulseTech</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>
@@ -1038,7 +1038,7 @@
 			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>ChargedShot</researchPrerequisite>
+			<researchPrerequisite>PulseTech</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>

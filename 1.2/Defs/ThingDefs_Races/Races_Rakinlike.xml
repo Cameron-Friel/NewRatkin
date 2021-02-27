@@ -325,6 +325,7 @@
 					<li>RK_OutdoorBackpack</li>
 					<li>RK_OrderUniform</li>
 					<li>RK_BulletProofHelmet</li>
+					<li>RK_PrestigeBulletProofHelmet</li>
 					<li>RK_FlatColorCoat</li>
 					<li>RK_FrillOnepiece</li>
 					<li>RK_HairCorsage</li>
@@ -334,6 +335,7 @@
 
 					<li>RK_Sack</li>
 					<li>RK_BattleSuit</li>
+					<li>RK_PrestigeBattleSuit</li>
 					<li>RK_Mask</li>
 					<li>RK_HeadBand</li>
 
@@ -372,6 +374,8 @@
 					<li>RK_FlechetteRifle</li>
 					<li>RK_FlechetteSniperRifle</li>
 					<li>RK_PrototypePulseRifle</li>
+					<li>RK_IonSniperRifle</li>
+					<li>RK_IonRifle</li>
 					<li>RK_Dagger</li>
 					<li>RK_OneHanded</li>
 					<li>RK_LightLance</li>

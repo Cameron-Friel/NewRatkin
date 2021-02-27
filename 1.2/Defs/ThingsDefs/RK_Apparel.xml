@@ -1761,6 +1761,9 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<researchPrerequisite>HigherClassClothing</researchPrerequisite>	
 		</recipeMaker>
@@ -1820,9 +1823,6 @@
 			</tags>
 		</apparel>
 		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
-			<li>FabricationBench</li>
-		</tradeTags>
 	</ThingDef>
 
 	<!-- 가스마스크-->
@@ -1836,6 +1836,9 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<researchPrerequisite>HigherClassClothing</researchPrerequisite>	
 		</recipeMaker>
@@ -1949,6 +1952,9 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<researchPrerequisite>HigherClassClothing</researchPrerequisite>	
 		</recipeMaker>
@@ -2010,9 +2016,6 @@
 			</tags>
 		</apparel>
 		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
-			<li>FabricationBench</li>
-		</tradeTags>
 	</ThingDef>
 
 

@@ -1067,6 +1067,15 @@
 				<power>9</power>
 				<cooldownTime>2</cooldownTime>
 			</li>
+			<li>
+				<label>bayonet</label>
+				<capacities>
+					<li>Cut</li>
+					<li>Stab</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
 		</tools>
 		<weaponTags Inherit="false">
 			<li>RK_Rifle</li>

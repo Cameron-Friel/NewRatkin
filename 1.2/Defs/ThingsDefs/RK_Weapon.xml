@@ -500,6 +500,9 @@
 				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<WorkToMake>7500</WorkToMake>
 			<Mass>0.8</Mass>
@@ -588,6 +591,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<Mass>2</Mass>
@@ -674,6 +680,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<Mass>2</Mass>
@@ -759,6 +768,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<Mass>2</Mass>
@@ -852,6 +864,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<Mass>2</Mass>
@@ -944,6 +959,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
 		<statBases>
 			<WorkToMake>60000</WorkToMake>
 			<Mass>6</Mass>
@@ -1023,6 +1042,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
 		<statBases>
 			<WorkToMake>55000</WorkToMake>
 			<Mass>4</Mass>

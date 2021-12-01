@@ -1251,6 +1251,66 @@
 		</recipeMaker>
 	</ThingDef>
 
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
+		<defName>RK_PrestigeBulletProofHelmet</defName>
+		<label>Ratkin prestige military helmet</label>
+		<description>variant of the ratkin bulletproof helmet with a gold accent that inspires confidence in those that behold the wearer. Satisfies royal clothing requirements.</description>
+		<graphicData>
+			<texPath>Apparel/RK_PrestigeBulletProofHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<DevilstrandCloth>25</DevilstrandCloth>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Gold>9</Gold>
+		</costList>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>1</Mass>			
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>			
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<SocialImpact>0.10</SocialImpact>
+			<PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
+      		<PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+				<li>Teeth</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/RK_PrestigeBulletProofHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>RK_Soldier</li>
+				<li>RK_3Tier</li>
+				<li>RoyalCombatGear</li>
+				<li>PrestigeCombatGear</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
 	<!-- 플랫칼라코트 사회적영향력 +10% 협상 +10%  -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_FlatColorCoat</defName>
@@ -1502,6 +1562,8 @@
 		<equippedStatOffsets>
 			<SocialImpact>0.10</SocialImpact>
 			<MedicalTendSpeed>0.10</MedicalTendSpeed>
+			<PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
+      		<PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -1559,6 +1621,8 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MedicalTendQuality>0.10</MedicalTendQuality>
+			<PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
+      		<PsychicEntropyRecoveryRate>0.066</PsychicEntropyRecoveryRate>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -1643,8 +1707,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker Inherit="false">
-		</recipeMaker>
 		<costList>
 			<Steel>10</Steel>
 		</costList>
@@ -1696,28 +1758,34 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker Inherit="false">
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<researchPrerequisite>RatkinBattlesuits</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
-			<Steel>60</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<Plasteel>40</Plasteel>
+			<Uranium>40</Uranium>
+			<ComponentSpacer>8</ComponentSpacer>
+			<Plasteel>120</Plasteel>
 		</costList>
 		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>		
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<statBases>
 			<MaxHitPoints>280</MaxHitPoints>
-			<WorkToMake>35000</WorkToMake>
+			<WorkToMake>75000</WorkToMake>
 			<Mass>7</Mass>
-			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
-			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>25</Insulation_Cold>
+			<ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
 			<Flammability>0.2</Flammability>
 			<EquipDelay>2.5</EquipDelay>
 		</statBases>
@@ -1755,8 +1823,82 @@
 			</tags>
 		</apparel>
 		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
-		</tradeTags>
+	</ThingDef>
+
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
+		<defName>RK_PrestigeBattleSuit</defName>
+		<label>ratkin prestige battlesuit</label>
+		<description>A variant of the ratkin battlesuit with a gold accent that inspires confidence in those that behold the wearer. Satisfies royal clothing requirements.</description>
+		<graphicData>
+			<texPath>Apparel/RK_PrestigeBattleSuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<researchPrerequisite>RatkinBattlesuits</researchPrerequisite>	
+		</recipeMaker>
+		<costList>
+			<DevilstrandCloth>35</DevilstrandCloth>
+			<Uranium>40</Uranium>
+			<ComponentSpacer>8</ComponentSpacer>
+			<Plasteel>160</Plasteel>
+			<Gold>180</Gold>
+		</costList>
+		<costStuffCount>85</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>		
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>340</MaxHitPoints>
+			<WorkToMake>150000</WorkToMake>
+			<Mass>5</Mass>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Cold>25</Insulation_Cold>
+			<ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+			<Flammability>0.2</Flammability>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+			<PainShockThreshold>0.1</PainShockThreshold>
+			<Flammability>-0.25</Flammability>
+			<MoveSpeed>-0.15</MoveSpeed>
+			<PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
+      		<PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_PrestigeBattleSuit</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+				<li>Shell</li>
+				<li>OuterClothing</li>
+			</layers>
+			<tags>
+				<li>RoyalCombatGear</li>
+				<li>PrestigeCombatGear</li>
+			</tags>
+		</apparel>
+		<tradeability>Sellable</tradeability>
 	</ThingDef>
 
 	<!-- 가스마스크-->
@@ -1770,14 +1912,19 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker Inherit="false">
+			<recipeUsers Inherit="false">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<researchPrerequisite>RatkinBattlesuits</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
-			<ComponentIndustrial>4</ComponentIndustrial>
-			<Plasteel>20</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>50</Plasteel>
 		</costList>
 		<costStuffCount>45</costStuffCount>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -1785,12 +1932,12 @@
 			<MaxHitPoints>240</MaxHitPoints>
 			<WorkToMake>18000</WorkToMake>
 			<Mass>2</Mass>			
-			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>			
-			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.90</ArmorRating_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -1818,8 +1965,6 @@
 			</tags>
 		</apparel>
 		<tradeability>Sellable</tradeability>
-		<tradeTags Inherit="false">
-		</tradeTags>
 	</ThingDef>
 	
 	<!-- 역병마스크-->
@@ -1896,8 +2041,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker Inherit="false">
-		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
 		</costList>
@@ -2421,8 +2564,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker Inherit="False">
-		</recipeMaker>
 		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -2504,8 +2645,6 @@
 				<li>Overhead</li>
 			</layers>
 		</apparel>
-		<recipeMaker Inherit="False">
-		</recipeMaker>
 		<tradeability>Sellable</tradeability>
 		<tradeTags Inherit="false">
 		</tradeTags>
@@ -2520,8 +2659,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker Inherit="false">
-		</recipeMaker>
 		<costList>
 			<Steel>10</Steel>
 		</costList>
@@ -2571,8 +2708,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker Inherit="false">		
-		</recipeMaker>
 		<costList>
 			<Leather_Thrumbo>85</Leather_Thrumbo>
 			<DevilstrandCloth>45</DevilstrandCloth>

@@ -601,6 +601,7 @@
 		<weaponTags>
 			<li>RK_2TierWeapon</li>
 			<li>RK_Shotgun</li>
+			<li>RK_Ion</li>
 		</weaponTags>
 		<apparelTags>
 			<li>RK_EliteSoldier</li>

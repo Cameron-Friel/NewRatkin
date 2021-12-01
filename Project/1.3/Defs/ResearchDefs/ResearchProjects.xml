@@ -153,6 +153,23 @@
 		<researchViewX>1</researchViewX>
 		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>RatkinBattlesuits</defName>
+		<label>ratkin battlesuits</label>
+		<description>Fabricate advanced heavy combat armor.</description>
+		<tab>RatkinTech</tab>
+		<baseCost>4000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>RatkinClothing</li>
+			<li>HighClassClothing</li>
+			<li>PoweredArmor</li>
+			<li>Fabrication</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
 	
 	<ResearchProjectTagDef>
 		<defName>RatkinStart</defName>

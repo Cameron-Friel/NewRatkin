@@ -1797,7 +1797,6 @@
 			<CarryingCapacity>23</CarryingCapacity>
 		</equippedStatOffsets>
 		<apparel>
-			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>
@@ -1946,7 +1945,6 @@
 			<Flammability>-0.1</Flammability>
 		</equippedStatOffsets>
 		<apparel>
-			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -2007,7 +2005,6 @@
 			<Flammability>-0.1</Flammability>
 		</equippedStatOffsets>
 		<apparel>
-			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -2729,7 +2726,6 @@
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
-			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Neck</li>

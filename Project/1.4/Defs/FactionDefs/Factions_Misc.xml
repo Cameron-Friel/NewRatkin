@@ -7,10 +7,7 @@
 		<listOrderPriority>30</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
-<<<<<<< HEAD
-=======
 		<maxConfigurableAtWorldCreation>2</maxConfigurableAtWorldCreation>
->>>>>>> upstream/release
 		<canMakeRandomly>true</canMakeRandomly>
 		<leaderTitle>prime executor</leaderTitle>
 		<factionNameMaker>NamerFaction_RatkinKingdom</factionNameMaker>
@@ -22,10 +19,6 @@
 		<backstoryCategories>
 			<li>Offworld</li>
 		</backstoryCategories>
-<<<<<<< HEAD
-		<geneticVariance>0.7</geneticVariance>
-=======
->>>>>>> upstream/release
 		<caravanTraderKinds>
 			<li>Caravan_Ratkin_BulkGoods</li>
 			<li>Caravan_Ratkin_DressMerchant</li>
@@ -192,26 +185,46 @@
 		<listOrderPriority>30</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>2</maxConfigurableAtWorldCreation>
 		<canMakeRandomly>true</canMakeRandomly>
 		<leaderTitle>prime executor</leaderTitle>
-
 		<factionNameMaker>NamerFaction_RatkinKingdom</factionNameMaker>
 		<settlementNameMaker>NamerSettlement_RatkinKingdom</settlementNameMaker>
-
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<factionIconPath>Icon/RK_icon</factionIconPath>
-		<techLevel>Industrial</techLevel>		
-		<backstoryFilters>
-			<li>
-				<categories>
-					<li>RatkinStory</li>
-				</categories>
-				<commonality>1</commonality>
-			</li>
-		</backstoryFilters>
-		<geneticVariance>0.7</geneticVariance>
+		<techLevel>Industrial</techLevel>
+		<backstoryCategories>
+			<li>Offworld</li>
+		</backstoryCategories>
+		<caravanTraderKinds>
+			<li>Caravan_Ratkin_BulkGoods</li>
+			<li>Caravan_Ratkin_DressMerchant</li>
+			<li>Caravan_Ratkin_CombatSupplier</li>
+			<li>Caravan_Ratkin_Free_company</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+		</structureMemeWeights>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
 				<li>(0,35)</li>
@@ -230,8 +243,8 @@
 					<RatkinCombatant>20</RatkinCombatant>
 					<RatkinSoldier>5</RatkinSoldier>
 				</options>
-			</li>	
-			<!-- 초반 혼합-->			
+			</li>
+			<!-- 초반 혼합-->
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
@@ -241,7 +254,7 @@
 					<RatkinVanguard>10</RatkinVanguard>
 					<RatkinCombatant>15</RatkinCombatant>
 				</options>
-			</li>	
+			</li>
 			<!-- 중후반 군인-->
 			<li>
 				<kindDef>Combat</kindDef>
@@ -297,7 +310,7 @@
 					<RatkinMerchant>15</RatkinMerchant>
 					<RatkinNoble>8</RatkinNoble>
 				</traders>
-				<carriers> 
+				<carriers>
 					<Ratkin_KingHamster>6</Ratkin_KingHamster>
 				</carriers>
 				<guards>
@@ -329,15 +342,17 @@
 				<li>Woody</li>
 			</stuffCategoriesToAllow>
 		</apparelStuffFilter>
+		<allowedCultures>
+			<li>RatkiniaTraditionCulture</li>
+		</allowedCultures>
 	</FactionDef>
-
 	<FactionDef ParentName="RatkinicaFactionBase">
 		<defName>Rakinica</defName>
 		<label>ratkin kingdom</label>
-		<description>Ratkin outlanders that went rogue on their parent kin long ago.</description>
+		<description>랫킨 왕국입니다. 인간들 눈에 띄지 않도록 숨어서 살고 있으며 농경생활을 위주로 생활하는 비 침략적인 종족입니다.</description>
 		<colorSpectrum>
-			<li>(1.88, 0.26, 0.26)</li>
-			<li>(0.737, 0.101, 0.101)</li>
+			<li>(0.78, 0, 0.27)</li>
+      		<li>(1, 0.74, 0.83)</li>
 		</colorSpectrum>
 		<naturalEnemy>true</naturalEnemy>
 	</FactionDef>

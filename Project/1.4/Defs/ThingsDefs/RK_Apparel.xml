@@ -1942,7 +1942,6 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ToxicSensitivity>-0.8</ToxicSensitivity>
 			<PainShockThreshold>0.05</PainShockThreshold>
 			<Flammability>-0.1</Flammability>
 		</equippedStatOffsets>

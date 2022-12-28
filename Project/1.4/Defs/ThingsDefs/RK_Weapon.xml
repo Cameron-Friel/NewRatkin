@@ -1384,46 +1384,41 @@
 				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<comps>
+		<!-- <comps> -->
+			<!-- <li> -->
+				<!-- <compClass>AdditionalVerb.Comp_VerbSaveable</compClass> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+		<verbs>			
 			<li>
-				<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
-			</li>
-		</comps>
-		<verbs>
-			<!-- 벅탄 -->
-			<li Class="AdditionalVerb.VerbProperties_Custom">
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<soundCast>FlechetteRifle</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-
 				<defaultProjectile>Bullet_RK_Buck</defaultProjectile>
-				<muzzleFlashScale>4</muzzleFlashScale>
+				
 				<warmupTime>0.9</warmupTime>
+				<range>13.9</range>					
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>4</muzzleFlashScale>
 				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-				<range>13.9</range>	
-				<desc>벅</desc>
-				<label>Buck fire</label>
-				<texPath>UI/Commands/Buck</texPath>
 			</li>
-			<!-- 슬러그탄 -->
-			<li Class="AdditionalVerb.VerbProperties_Custom">
-				<verbClass>Verb_Shoot</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<soundCast>FlechetteRifle</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
+			<!-- <li Class="AdditionalVerb.VerbProperties_Custom"> -->
+				<!-- <verbClass>Verb_Shoot</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <soundCast>FlechetteRifle</soundCast> -->
+				<!-- <soundCastTail>GunTail_Heavy</soundCastTail> -->
 
-				<defaultProjectile>Bullet_RK_Slug</defaultProjectile>
-				<muzzleFlashScale>12</muzzleFlashScale>
-				<warmupTime>1.55</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<range>27.9</range>
-				<desc>슬러그</desc>
-				<label>Slug fire</label>
-				<texPath>UI/Commands/Slug</texPath>
-			</li>
+				<!-- <defaultProjectile>Bullet_RK_Slug</defaultProjectile> -->
+				<!-- <muzzleFlashScale>12</muzzleFlashScale> -->
+				<!-- <warmupTime>1.55</warmupTime> -->
+				<!-- <burstShotCount>1</burstShotCount> -->
+				<!-- <ticksBetweenBurstShots>6</ticksBetweenBurstShots> -->
+				<!-- <range>27.9</range> -->
+				<!-- <desc>슬러그</desc> -->
+				<!-- <label>Slug fire</label> -->
+				<!-- <texPath>UI/Commands/Slug</texPath> -->
+			<!-- </li> -->
 		</verbs>
 		<tools>
 			<li>
@@ -1460,7 +1455,6 @@
 		<equippedAngleOffset>45</equippedAngleOffset>
 	</ThingDef>
 	
-	
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_RK_Buck</defName>
 		<label>Buck bullet</label>
@@ -1476,6 +1470,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingDef>	
+	
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_RK_Slug</defName>
 		<label>Slug bullet</label>

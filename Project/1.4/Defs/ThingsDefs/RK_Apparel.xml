@@ -1707,6 +1707,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<recipeMaker Inherit="false">
+		</recipeMaker>
 		<costList>
 			<Steel>10</Steel>
 		</costList>
@@ -2000,7 +2002,7 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ToxicSensitivity>-0.8</ToxicSensitivity>
+			<ToxicEnvironmentResistance>-0.8</ToxicEnvironmentResistance>
 			<PainShockThreshold>0.05</PainShockThreshold>
 			<Flammability>-0.1</Flammability>
 		</equippedStatOffsets>
@@ -2038,6 +2040,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<recipeMaker Inherit="false">
+		</recipeMaker>
 		<costList>
 			<DevilstrandCloth>35</DevilstrandCloth>
 		</costList>
@@ -2481,7 +2485,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_HeavyShield_Big</defName>
 		<label>ratkin Big heavy Shield</label>
-		<description>금속 방패.</description>
+		<description>금속 대방패.</description>
 		<thingClass>NewRatkin.Shield</thingClass>
 		<graphicData>
 			<texPath>Apparel/RK_HeavyShield_Big</texPath>
@@ -2514,7 +2518,7 @@
 			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToMake>40000</WorkToMake>
 			<Mass>10</Mass>
-			<StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
@@ -2561,6 +2565,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<recipeMaker Inherit="False">
+		</recipeMaker>
 		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -2642,6 +2648,8 @@
 				<li>Overhead</li>
 			</layers>
 		</apparel>
+		<recipeMaker Inherit="False">
+		</recipeMaker>
 		<tradeability>Sellable</tradeability>
 		<tradeTags Inherit="false">
 		</tradeTags>
@@ -2656,6 +2664,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<recipeMaker Inherit="false">
+		</recipeMaker>
 		<costList>
 			<Steel>10</Steel>
 		</costList>
@@ -2705,6 +2715,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<recipeMaker Inherit="false">		
+		</recipeMaker>
 		<costList>
 			<Leather_Thrumbo>85</Leather_Thrumbo>
 			<DevilstrandCloth>45</DevilstrandCloth>

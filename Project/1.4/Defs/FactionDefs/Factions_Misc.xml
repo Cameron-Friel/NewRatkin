@@ -7,6 +7,10 @@
 		<listOrderPriority>30</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+<<<<<<< HEAD
+=======
+		<maxConfigurableAtWorldCreation>2</maxConfigurableAtWorldCreation>
+>>>>>>> upstream/release
 		<canMakeRandomly>true</canMakeRandomly>
 		<leaderTitle>prime executor</leaderTitle>
 		<factionNameMaker>NamerFaction_RatkinKingdom</factionNameMaker>
@@ -18,7 +22,10 @@
 		<backstoryCategories>
 			<li>Offworld</li>
 		</backstoryCategories>
+<<<<<<< HEAD
 		<geneticVariance>0.7</geneticVariance>
+=======
+>>>>>>> upstream/release
 		<caravanTraderKinds>
 			<li>Caravan_Ratkin_BulkGoods</li>
 			<li>Caravan_Ratkin_DressMerchant</li>

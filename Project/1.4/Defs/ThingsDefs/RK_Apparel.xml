@@ -514,6 +514,182 @@
 		</apparel>
 	</ThingDef>
 
+	<!-- 의류 기본온도저항 추위+5 더위3 -->
+	<!-- 2티어 -->
+	<!-- 가방  운반용량 +20 -->
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
+		<defName>RK_Wing</defName>
+		<label>wing</label>
+		<description>등에 맬 수 있는 가방입니다. 짐을 더 많이 나를 수 있게 해줍니다.</description>
+		<graphicData>
+			<texPath>Apparel/RK_Wing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>RatkinClothing</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Cloth>85</Cloth>
+			<HemogenPack>1</HemogenPack>
+		</costList>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>5500</WorkToMake>
+			<Mass>0.3</Mass>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>Apparel/RK_Wing</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<offset>(0,-0.15)</offset>
+				</north>
+				<south>
+					<offset>(0,-0.15)</offset>
+				</south>
+
+				<male><scale>(1.5,1.5)</scale></male>
+				<female><scale>(1.5,1.5)</scale></female>
+				<thin><scale>(1.5,1.5)</scale></thin>
+				<hulk><scale>(1.5,1.5)</scale></hulk>
+				<fat><scale>(1.5,1.5)</scale></fat>
+			</wornGraphicData>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>RK_Apparel</li>
+				<li>RK_Wing</li>
+				<li>RK_2Tier</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelBase">
+    <defName>RK_ShieldBelt_Wing</defName>
+    <label>shield wing</label>
+    <description>A projectile-repulsion device. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It prevents the wearer from firing out, and shuts down instantly if hit by EMP.</description>
+    <thingClass>Apparel</thingClass>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>3</Mass>
+      <WorkToMake>14000</WorkToMake>
+      <Flammability>0.4</Flammability>
+      <EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.1</EnergyShieldEnergyMax>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+		<MoveSpeed>0.1</MoveSpeed>
+	</equippedStatOffsets>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Steel>50</Steel>
+      <Plasteel>20</Plasteel>
+	  <HemogenPack>5</HemogenPack>
+    </costList>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+      <researchPrerequisite>ShieldBelt</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+	  <wornGraphicPath>Apparel/RK_Wing</wornGraphicPath>
+	  <wornGraphicData>
+		<renderUtilityAsPack>true</renderUtilityAsPack>
+		<north>
+			<offset>(0,-0.15)</offset>
+		</north>
+		<south>
+			<offset>(0,-0.15)</offset>
+		</south>
+
+		<male><scale>(1.5,1.5)</scale></male>
+		<female><scale>(1.5,1.5)</scale></female>
+		<thin><scale>(1.5,1.5)</scale></thin>
+		<hulk><scale>(1.5,1.5)</scale></hulk>
+		<fat><scale>(1.5,1.5)</scale></fat>
+	  </wornGraphicData>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+      </tags>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_Shield" />
+    </comps>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
 	<!-- 작업복  재단 속도 +10% 요리속도 +5% 재배속도 5% 언스킬드속도 +5% 동물수집속도 +5%-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_WorkerWear</defName>

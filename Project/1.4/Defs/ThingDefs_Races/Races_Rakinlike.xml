@@ -314,12 +314,6 @@
 						<defName>CreepyBreathing</defName>
 					</li>
 				</disallowedTraits>
-				<growthAges MayRequire="Ludeon.RimWorld.Biotech">
-					<li>3</li>
-					<li>6</li>
-					<li>9</li>
-					<li>12</li>
-				</growthAges>
 			</generalSettings>
 			<graphicPaths>
 				<body>Things/Ratkin/Bodies/</body>
@@ -584,19 +578,19 @@
 				</li>
 				<li>
 					<def>HumanlikeChild</def>
-					<minAge>4</minAge>
+					<minAge>3</minAge>
 				</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">
 					<def>HumanlikePreTeenager</def>
-					<minAge>8</minAge>
+					<minAge>9</minAge>
 				</li>
 				<li>
 					<def>HumanlikeTeenager</def>
-					<minAge>12</minAge>
+					<minAge>13</minAge>
 				</li>
 				<li>
 					<def>HumanlikeAdult</def>
-					<minAge>16</minAge>
+					<minAge>18</minAge>
 				</li>
 			</lifeStageAges>
 			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">

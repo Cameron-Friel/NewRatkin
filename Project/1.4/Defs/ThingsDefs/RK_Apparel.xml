@@ -1929,7 +1929,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_BattleSuit</defName>
 		<label>ratkin battlesuit</label>
-		<description>침투에 유리하도록 디자인된 전투복입니다. 극한의 온도상황에서 활동할 수 있도록 설계되어있습니다.</description>
+		<description> A battlesuit worn by elite ratkin shock troops.</description>
 		<graphicData>
 			<texPath>Apparel/RK_BattleSuit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1939,7 +1939,7 @@
 			<recipeUsers Inherit="false">
 				<li>FabricationBench</li>
 			</recipeUsers>
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>RatkinBattlesuits</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -1951,10 +1951,11 @@
 		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
+			<li>Fabric</li>
 		</stuffCategories>		
 		<techLevel>Spacer</techLevel>
 		<statBases>
-			<MaxHitPoints>280</MaxHitPoints>
+			<MaxHitPoints>400</MaxHitPoints>
 			<WorkToMake>75000</WorkToMake>
 			<Mass>7</Mass>
 			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
@@ -2015,7 +2016,7 @@
 			<recipeUsers Inherit="false">
 				<li>FabricationBench</li>
 			</recipeUsers>
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>RatkinBattlesuits</researchPrerequisite>	
 		</recipeMaker>
 		<costList>
@@ -2028,10 +2029,11 @@
 		<costStuffCount>85</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
+			<li>Fabric</li>
 		</stuffCategories>		
 		<techLevel>Spacer</techLevel>
 		<statBases>
-			<MaxHitPoints>340</MaxHitPoints>
+			<MaxHitPoints>400</MaxHitPoints>
 			<WorkToMake>150000</WorkToMake>
 			<Mass>5</Mass>
 			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
@@ -2082,7 +2084,7 @@
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_Mask</defName>
 		<label>Ratkin mask helmet</label>
-		<description>마스크가 있는 헬멧입니다. 유독성 환경에서도 장시간 활동할 수 있도록 고안되었습니다.</description>
+		<description>A mask worn by ratkin shock troops. It filters air to provide environmental toxicity resistance.</description>
 		<graphicData>
 			<texPath>Apparel/RK_Mask</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -2120,10 +2122,11 @@
 		<equippedStatOffsets>
 			<PainShockThreshold>0.05</PainShockThreshold>
 			<Flammability>-0.1</Flammability>
+			<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
-				<li>UpperHead</li>
+				<li>FullHead</li>
 				<li>Eyes</li>
 				<li>Teeth</li>
 			</bodyPartGroups>

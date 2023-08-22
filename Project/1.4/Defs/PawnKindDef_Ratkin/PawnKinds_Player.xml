@@ -55,6 +55,24 @@
 		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
 		<apparelColor>(254,254,254)</apparelColor>
 	</PawnKindDef>
+	<!--Tribal ratkin-->
+	<PawnKindDef ParentName="RKBasePawnKind">
+    	<defName>FeralRatkin</defName>
+    	<label>member</label>
+    	<defaultFactionType>RK_PlayerTribe</defaultFactionType>
+    	<chemicalAddictionChance>0.05</chemicalAddictionChance>
+    	<apparelTags>
+      		<li>Neolithic</li>
+    	</apparelTags>
+    	<apparelMoney>200~200</apparelMoney>
+    	<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    	<techHediffsMoney>50~50</techHediffsMoney>
+    	<techHediffsTags>
+      		<li>Poor</li>
+    	</techHediffsTags>
+    	<techHediffsChance>0.02</techHediffsChance>
+    	<initialResistanceRange>9~15</initialResistanceRange>
+  	</PawnKindDef>
 	<!-- 귀족 -->
 	<PawnKindDef ParentName="RKBasePawnKind">
 		<defName>RatkinNoble</defName>

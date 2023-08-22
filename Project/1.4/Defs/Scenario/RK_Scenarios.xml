@@ -75,4 +75,31 @@
 			</parts>
 		</scenario>
 	</ScenarioDef>
+	
+	<ScenarioDef>
+		<defName>RK_TribeScenario</defName>
+		<label>Lost Ratkin Tribe</label>
+		<description>Feral ratkins lived together in harmony with nature. Then the blood machines came, raining deathlight. Only a few escaped, hungry and desperate with nothing but the clothes on thier backs and a determination to survive. </description>
+		<scenario>
+			<summary>Four feral ratkins must biuld a new home and survive.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>RK_PlayerTribe</factionDef>
+			</playerFaction>
+			<parts>
+			<!-- Config pages -->
+        	<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          		<def>ConfigPage_ConfigureStartingPawns</def>
+          		<pawnCount>4</pawnCount>
+          		<pawnChoiceCount>8</pawnChoiceCount>
+        	</li>
+
+        	<!-- Player starting stuff spawn method-->
+        	<li Class="ScenPart_PlayerPawnsArriveMethod">
+          		<def>PlayerPawnsArriveMethod</def>
+          		<method>Standing</method>
+        	</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
 </Defs>
